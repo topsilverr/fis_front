@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "2022_fis_police_app_service_front",
+    "slug": "2022_fis_police_app_service_front",
+    "privacy": "unlisted",
+    "sdkVersion": "44.0.0",
+    "version": "1.0.0",
+    "entryPoint": "node_modules/expo/AppEntry.js",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "config": {"googleMapsApiKey":"AIzaSyDXPHRGEPDjMPpfppcIbQ3kXjREMPeIP_o"},
+      "bundleIdentifier":"com.example",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIBackgroundModes": ["location", "fetch"],
+        "CFBundleAllowMixedLocalizations": true,
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "App requires geolocation to improve the quality of the service",
+        "NSLocationAlwaysUsageDescription": "App requires geolocation to improve the quality of the service",
+        "NSLocationWhenInUseUsageDescription": "App requires geolocation to improve the quality of the service",
+        "NSCameraUsageDescription": "The picture will be used to inform the state of the packages during delivery",
+      },
+      "bundleIdentifier": "com.yourcompany.yourappname",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "config":{"googleMaps": {"apiKey": "AIzaSyDXPHRGEPDjMPpfppcIbQ3kXjREMPeIP_o"}},
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions":[
+        "ACCESS_BACKGROUND_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.fis_police_app.fis_police_app",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
